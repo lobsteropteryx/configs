@@ -1,0 +1,39 @@
+[user]
+	name = Ian Firkin
+	email = ian.firkin@gisinc.com
+[core]
+	autocrlf = true
+	excludesfilt = .idea/*
+	excludesfile = ~/.gitignore
+	editor = vim
+	compression = 0
+[diff]
+ tool = bc4
+[difftool "bc4"]
+ cmd =  "C:/program\\ files\\ \\(x86\\)/beyond\\ compare\\ 4/bcomp.exe $LOCAL $REMOTE"
+[merge]
+ tool = bc4
+[mergetool "bc4"]
+ cmd = "C:/Program\\ Files\\ \\(x86\\)/Beyond\\ Compare\\ 4/Bcomp.exe $LOCAL $REMOTE $BASE $MERGED"
+ trustExitCode = true
+ keepBackup = false
+
+
+
+[credential]
+	helper = manager
+[mergetool]
+	bc3 = trustExitCode
+[http]
+	postBuffer = 1048576000
+[pack]
+	packsizelimit = 2g
+[difftool "bc3"]
+	path = c:/Program Files (x86)/Beyond Compare 4/bcomp.exe
+[alias]
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+[difftool "sourcetree"]
+	cmd = 'C:/Program Files (x86)/Beyond Compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = 'C:/Program Files (x86)/Beyond Compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+	trustExitCode = true
